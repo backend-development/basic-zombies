@@ -62,13 +62,14 @@ class ZombiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_zombie
-      @zombie = Zombie.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def zombie_params
-      params.require(:zombie).permit(:name, :graveyard, :day_of_death, :no_of_arms, :description)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_zombie
+    @zombie = Zombie.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def zombie_params
+    params.require(:zombie).permit(:name, :graveyard, :day_of_death, :no_of_arms, :description)
+  end
 end
