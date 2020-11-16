@@ -5,9 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#
-
-
-Tweet.create(status: "Where can I get a good bite to eat?", zombie: "Ash")
-Tweet.create(status: "I <3 brains.", zombie: "QueenRotten")
-Tweet.create(status: "I just ate some delicious brains.", zombie: "Jim")
